@@ -1,0 +1,10 @@
+sudo mysqldump -u root -p dbname > /opt/backup.sql
+sudo chmod 777 /opt/
+
+restore
+
+mysql -u root -p dbname < /opt/backup.sql
+
+
+
+https://linuxize.com/post/how-to-back-up-and-restore-mysql-databases-with-mysqldump/
